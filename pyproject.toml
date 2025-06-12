@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-resume-tailor-service"
+version = "0.1.0"
+description = "A Streamlit app to tailor resumes to job postings"
+authors = [{ name = "Shi Fan", email = "fanshi118@gmail.com" }]
+dependencies = [
+    "streamlit",
+    "langchain",
+    "python-docx",
+    "docx>=0.2.4",
+    "bs4>=0.0.2",
+    "requests>=2.32.4",
+    "langchain-community>=0.3.25",
+]
+
+[tool.setuptools]
+py-modules = ["app", "llm_utils", "file_utils", "job_scraper", "resume_processor"]
