@@ -11,6 +11,7 @@ dependencies = [
     "streamlit",
     "langchain",
     "python-docx",
+    "pytest",
     "docx>=0.2.4",
     "bs4>=0.0.2",
     "requests>=2.32.4",

@@ -7,7 +7,7 @@ def load_text(uploaded_file):
         text = "\n".join([para.text for para in doc.paragraphs])
         return text, "docx"
     else:
-        text = uploaded_file.read().decode("utf-8")
+        text = uploaded_file.read()
         return text, "txt"
 
 def convert_text_to_docx(text):
