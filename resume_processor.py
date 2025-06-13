@@ -17,7 +17,7 @@ Return the resume with the most relevant content clearly highlighted or annotate
 
 def generate_tailored_resume(llm, relevant_content, job_description):
     prompt = ChatPromptTemplate.from_template("""
-You are a professional resume writer. Given the full resume with highlighted relevant content and the job description, rewrite the resume by keeping all the original content, but organize and format it to prioritize and emphasize the most relevant experiences and skills for the job.
+You are a professional resume writer. Given the full resume with highlighted relevant content and the job description, rewrite the resume by keeping all the original content, but organize and format it to prioritize and emphasize the most relevant experiences and skills for the job. Focus on the business impact of the experiences and skills.
 
 Job Description:
 {job_description}
